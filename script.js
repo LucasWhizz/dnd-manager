@@ -6,13 +6,13 @@ function showImage(character) {
     let img = document.getElementById("char-image");
 
     const characterImages = {
-        "dargrath": "images/dargrath.jpg",
-        "harvester": "images/harvester.jpg",
-        "neree": "images/neree.jpg",
-        "zeyola": "images/zeyola.jpg",
-        "wildstride": "images/wildstride.jpg",
-        "katara": "images/katara.jpg",
-        "nyanxar": "images/nyanxar.jpg"
+        "dargrath": "images/dargrath.png",
+        "harvester": "images/harvester.png",
+        "neree": "images/neree.png",
+        "zeyola": "images/zeyola.png",
+        "wildstride": "images/wildstride.png",
+        "katara": "images/katara.png",
+        "nyanxar": "images/nyanxar.png"
     };
 
     img.src = characterImages[character];
