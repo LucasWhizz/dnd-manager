@@ -1,1 +1,22 @@
+#character-list {
+    list-style: none;
+    padding: 0;
+}
 
+#character-list li {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+#character-list li:hover {
+    background-color: #ddd;
+}
+
+#char-image {
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
+    border: 2px solid #000;
+}
