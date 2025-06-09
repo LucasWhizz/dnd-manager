@@ -9,39 +9,33 @@
 <body>
     <header>
         <h1>Player Characters</h1>
+        <button id="home-btn" onclick="window.location.href='index.html'">Return Home</button>
     </header>
 
     <main>
         <ul id="character-list">
-            <li onmouseover="showImage('dargrath')" onmouseout="hideImage()">
-                <span>Dargrath</span>
-            </li>
-            <li onmouseover="showImage('harvester')" onmouseout="hideImage()">
-                <span>Harvester</span>
-            </li>
-            <li onmouseover="showImage('neree')" onmouseout="hideImage()">
-                <span>Neree</span>
-            </li>
-            <li onmouseover="showImage('zeyola')" onmouseout="hideImage()">
-                <span>Zeyola</span>
-            </li>
-            <li onmouseover="showImage('wildstride')" onmouseout="hideImage()">
-                <span>Wildstride</span>
-            </li>
-            <li onmouseover="showImage('katara')" onmouseout="hideImage()">
-                <span>Katara</span>
-            </li>
-            <li onmouseover="showImage('nyanxar')" onmouseout="hideImage()">
-                <span>Nyanxar</span>
-            </li>
+            <li onmouseover="showImage('dargrath')" onmouseout="hideImage()">Dargrath</li>
+            <li onmouseover="showImage('harvester')" onmouseout="hideImage()">Harvester</li>
+            <li onmouseover="showImage('neree')" onmouseout="hideImage()">Neree</li>
+            <li onmouseover="showImage('zeyola')" onmouseout="hideImage()">Zeyola</li>
+            <li onmouseover="showImage('wildstride')" onmouseout="hideImage()">Wildstride</li>
+            <li onmouseover="showImage('katara')" onmouseout="hideImage()">Katara</li>
+            <li onmouseover="showImage('nyanxar')" onmouseout="hideImage()">Nyanxar</li>
         </ul>
         <img id="char-image" src="" alt="Character Image" style="display: none;">
     </main>
 
+    <!-- Blade Menu -->
+    <div id="blade-menu">
+        <button id="menu-toggle">☰</button>
+        <div id="menu-content">
+            <a href="characters.html">Characters</a>
+            <a href="npcs.html">NPCs</a>
+            <a href="quests.html">Quests</a>
+            <a href="sessions.html">Sessions</a>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
-<header>
-    <h1>Characters</h1>
-    <button id="home-btn" onclick="window.location.href='index.html'">Return Home</button>
-</header>
