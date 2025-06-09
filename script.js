@@ -6,7 +6,7 @@ function showImage(character) {
     let img = document.getElementById("char-image");
 
     const characterImages = {
-        "dargrath": "images/dargrath.png",
+        "dargrath": "images/Dargrath.png",
         "harvester": "images/harvester.png",
         "neree": "images/neree.png",
         "zeyola": "images/zeyola.png",
