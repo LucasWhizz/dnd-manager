@@ -1,3 +1,62 @@
+/* --- General Page Styling --- */
+body {
+    background-image: url('images/leather-texture.jpg'); /* Leather-bound background */
+    background-size: cover;
+    color: #f4e0c4; /* Parchment-like text */
+    font-family: 'Cinzel Decorative', serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Main Content Area --- */
+main {
+    background-image: url('images/parchment-texture.jpg'); /* Aged parchment */
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid #684d3b; /* Leather brown edging */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Depth effect */
+    max-width: 800px;
+    margin: auto;
+}
+
+/* --- Title Styling --- */
+h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #c9a66b; /* Gold-like effect */
+    text-shadow: 2px 2px 4px #42210b;
+    border-bottom: 2px solid #c9a66b;
+    padding-bottom: 10px;
+}
+
+/* --- Navigation Styling --- */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    background-image: url('images/parchment-texture.jpg');
+    padding: 10px 20px;
+    margin: 5px;
+    border: 2px solid #704214;
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #42210b;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li:hover {
+    background-color: rgba(120, 74, 48, 0.8);
+    color: #f4e0c4;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.8); /* Golden glow */
+}
+
+/* --- Character List Styling --- */
 #character-list {
     list-style: none;
     padding: 0;
@@ -11,12 +70,30 @@
 }
 
 #character-list li:hover {
-    background-color: #ddd;
+    background-color: rgba(120, 74, 48, 0.5);
+    border-left: 4px solid #c9a66b; /* Gold accent */
 }
 
+/* --- Character Image Styling --- */
 #char-image {
-    width: 200px;
+    width: 250px;
     height: auto;
     margin-top: 20px;
-    border: 2px solid #000;
+    border: 3px solid #42210b;
+    display: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#char-image.show {
+    display: block;
+    opacity: 1;
+}
+
+/* --- Scroll Effect for Long Lists --- */
+#character-list {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 2px solid #704214;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
 }
